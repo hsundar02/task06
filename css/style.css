@@ -125,3 +125,61 @@
 	background-color:black;
 	height: 340px;
 }
+.services{
+	background-color:black;
+	height: 480px;
+}
+.servicelist{
+	background-color:red;
+	height: 220px;
+	margin-bottom: 20px;
+}
+.services_name{
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.servicehead{
+	background-color:black;
+	    height: 140px;
+}
+.servicecontent{
+	background-color:red;
+	height:100px;
+}
+.callaction{
+	background-color:black;
+	height: 190px;
+}
+.calltoaction{
+	background-color:red;
+	height:170px;
+}
+.portfolio{
+	background-color:black;
+}
+.portfoliohead{
+	background-color:red;
+	height:100px;
+	margin-bottom: 20px;
+}
+.portfolio_items{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: black;
+    height: 710px;
+}
+.portfoliolist{
+	background-color:red;
+	height: 110px;
+	margin-bottom: 20px;
+}
+.portfoliolist1{
+	background-color:red;
+	height: 220px;
+	margin-bottom: 20px;
+}
+.aboutcom{
+	background-color:black;
+}
