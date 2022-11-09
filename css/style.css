@@ -66,13 +66,17 @@
 	background-color:black;
 	padding: 10px 0;
 }
-.logo{
-	font-size: 50px;
-	font-weight:600;
+.logo > a{
+	font-size: 35px;
+	font-weight:500;
 	color: white;
+	text-decoration: none;
 }
-.navbar{
-	
+h1{
+	font-family:Raleway, sans-serif;
+}
+span{
+	color: yellow;
 }
 .navlink{
 	display: inline-block;
@@ -93,48 +97,67 @@
 	font-weight: 700;
 }
 
-.dropdown{
+.dropdown, .dropdown_content{
 	position: relative;
 }
-.dropdown_list {
+.dropdown > a > i{
+	margin-left: 8px;
+}
+.dropdown_list, .dropdown_content_sub {
   display: none;
   position: absolute;
-  background-color: white;
-  min-width: 100px;
-  padding: 12px 16px;
- 
+  top:100%;
+  left: 0;
+  min-width: 180px;   
+  background-color: white; 
+  padding: 10px 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(50px);
+  transition: all 0.3s ease;
 }
-.dropdown_list:hover .dropdown_content{
-	background-color:blue;
-	color:white;
-	text-decoration: none;
+.dropdown_content_sub {
+	left: 100%;
+	top: 0;
+transform: translateX(-30px);	
 }
-.dropdown:hover .dropdown_list {
+.dropdown:hover .dropdown_list, 
+.dropdown_content:hover .dropdown_content_sub{
+  opacity: 1;
+  visibility: visible;
+   transform: translateX(0);
   display: block;
 }
-.contentlist{
-	position: relative;
-}
-.dropdown_cotent1{
-	position: absolute;
-	min-width: 100px;
-	margin: 20px;
-	top: 100px;
-	left: 100px;
-}
+
+.dropdown_list > li > a,
+.dropdown_content_sub >li >a{
+	display: block;
+	text-decoration:none;
+	color: black;
+	font-size:15px;
+	text-align: left;
+	padding: 8px 20px;
+	transition: all 0.3s ease;
+} 
+.dropdown_list > li > a:hover,
+ .dropdown_content_sub >li >a:hover {
+	background-color:orange;
+	color:black;
+}  
 .btn{
 	background-color:black;
 	color:white;
-	padding:10px 20px;
+	padding:10px 10px;
 	border:1px solid yellow;
 	border-radius:10px;
 }
 .nav-button > a{
-	display: block;
-	background-color:black;
-	color:green;
-	text-decoration: none;
-	text-align: center;
+display: inline-block;
+    background-color: black;
+    color: green;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 25px;
 }
 .nav-button a:hover{
 	background-color:blue;
