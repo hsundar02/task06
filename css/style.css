@@ -67,23 +67,50 @@
 	padding: 10px 0;
 }
 .logo{
-	background-color:red;
-	height: 50px;
+	font-size: 50px;
+	font-weight:600;
+	color: white;
 }
 .navbar{
-	background-color:red;
-	height: 50px;
+	
 }
-.nav-button{
-	background-color:red;
-	height: 50px;
+.navlink{
+	display: inline-block;
+	padding: 10px;
+}
+.navlink a{
+	display: block;
+	text-decoration:none;
+	color: white;
+	font-size:15px;
+	font-weight: 700;
+}
+
+.btn{
+	background-color:orange;
+	color:green;
+	padding:10px 25px;
+	border:1px solid grey;
+	border-radius:10px;
+}
+.nav-button > a{
+	display: block;
+	background-color:orange;
+	color:green;
+	text-decoration: none;
+	text-align: center;
+}
+.nav-button a:hover{
+	background-color:blue;
+	color:white;
+	text-decoration: none;
 }
 .bannersection{
-	background-color:black;
+	background-color:red;
 	height: 250px;
 }
 .bannercontent{
-	background-color:red;
+	background-color:black;
 	height:100px;
 }
 .bannerdata{
@@ -92,45 +119,45 @@
 	justify-content:center;
 }
 .banner-items{
-	background-color:black;
+	background-color:red;
 	height:100px;
 	justify-content:center;
 	
 }
 .banner-boxs{
-	background-color:red;
+	background-color:black;
 	height:100px;
 	margin:10px;
 	padding-bottom:20px;
 }
 .about
 {
-	background-color:black;
+	background-color:red;
 	height: 310px;
 }
 .about_content{
-	background-color:red;
+	background-color:black;
 	height:300px;
 }
 .clients{
-	background-color:black;
+	background-color:red;
 	height: 100px;
 }
 .clientimage{
-	background-color:red;
+	background-color:black;
 	height: 50px;
 	margin: 10px;
 }
  .service{
-	background-color:black;
+	background-color:red;
 	height: 340px;
 }
 .services{
-	background-color:black;
+	background-color:red;
 	height: 480px;
 }
 .servicelist{
-	background-color:red;
+	background-color:black;
 	height: 220px;
 	margin-bottom: 20px;
 }
@@ -140,26 +167,26 @@
 	justify-content: center;
 }
 .servicehead{
-	background-color:black;
+	background-color:red;
 	    height: 140px;
 }
 .servicecontent{
-	background-color:red;
+	background-color:black;
 	height:100px;
 }
 .callaction{
-	background-color:black;
+	background-color:red;
 	height: 190px;
 }
 .calltoaction{
-	background-color:red;
+	background-color:black;
 	height:170px;
 }
 .portfolio{
-	background-color:black;
+	background-color:red;
 }
 .portfoliohead{
-	background-color:red;
+	background-color:black;
 	height:100px;
 	margin-bottom: 20px;
 }
@@ -167,19 +194,19 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    background-color: black;
+    background-color: red;
     height: 710px;
 }
 .portfoliolist{
-	background-color:red;
+	background-color:black;
 	height: 110px;
 	margin-bottom: 20px;
 }
 .portfoliolist1{
-	background-color:red;
+	background-color:black;
 	height: 220px;
 	margin-bottom: 20px;
 }
 .aboutcom{
-	background-color:black;
+	background-color:red;
 }
