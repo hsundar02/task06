@@ -63,7 +63,11 @@
 }
 
 .topheader{
-	background-color:black;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	background-color: rgba(0,0,0,0);
 	padding: 10px 0;
 }
 .logo > a{
@@ -165,32 +169,48 @@ display: inline-block;
 	text-decoration: none;
 }
 .bannersection{
-	background-color:red;
-	height: 250px;
-}
+ background-color:red;
+ background-image: url(../images/hero-bg.jpg);
+ background-repeat:no-repeat;
+ background-size: cover;
+ background-position: center;
+ background-attachment: fixed;
+ padding: 80px 0;
+ height: 100vh;
+} 
 .bannercontent{
-	background-color:black;
-	height:100px;
+	text-align: center;
+	margin-bottom: 50px;
 }
-.bannerdata{
-	background-color:white;
-	height:50px;
-	justify-content:center;
+.bannercontent h1{
+	color: white;
+	font-size: 55px;
+	font-weight: 700;
+	line-height: 60px;
+	padding-bottom: 15px;
+}
+.bannercontent h1 span{
+	color: yellow;
+}
+.bannercontent p{
+	color: white;
+	font-size: 24px;
 }
 .banner-items{
-	background-color:red;
-	height:100px;
-	justify-content:center;
-	
+	justify-content:center;	
 }
 .banner-boxs{
-	background-color:black;
-	height:100px;
-	margin:10px;
-	padding-bottom:20px;
+	border: solid  1px yellow;
+	text-align: center;
+	padding: 30px 20px;
+	color: white;
+	height: 100%
 }
-.about
-{
+.banner-boxs i{
+	color: yellow;
+	font-size: 30px;
+}
+.about{
 	background-color:red;
 	height: 310px;
 }
