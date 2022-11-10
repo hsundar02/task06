@@ -25,6 +25,13 @@ time, mark, audio, video {
 
 body {
     line-height:1;
+	font-family: 'Open sans', sans-serif;
+	
+}
+p, il{
+	color:#444444;
+	font-size: 16px;
+	line-height: 22px;
 }
 
 article,aside,details,figcaption,figure,
@@ -32,7 +39,7 @@ footer,header,hgroup,menu,nav,section {
     display:block;
 }
 
-nav ul {
+nav ul, ul{
     list-style:none;
 }
 
