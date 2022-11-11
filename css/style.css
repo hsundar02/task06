@@ -272,15 +272,18 @@ transform: translateX(-30px);
 }	
 .dots{
 	text-align: center;
-	padding: 20px 10px;
+	padding: 15px 5px;
 }
 .dots .dots-box{
 	display: inline-block;
-	width: 15px;
-	height: 15px;
+	width: 10px;
+	height: 10px;
 	background-color: #ccc;
 	border-radius: 50%;
 	margin: 0 5px;
+}
+.dots-box:hover{
+	background-color:#ffc451;
 }
  .service{
 	background-color:red;
