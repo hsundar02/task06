@@ -70,7 +70,7 @@
 	left: 0;
 	right: 0;
 	top: 0;
-	background-color: transparent;
+	background: rgba(0, 0, 0, 0.8);
 	padding: 15px 0;
 }
 .logo > a{
@@ -170,12 +170,12 @@
 
 /* ....Banner Section.... */
 .bannersection{
- background-image: linear-gradient(#ffffff36, #000000c4), url(../images/hero-bg.jpg);
+ background-image: linear-gradient(#ffffff14, #070404d9), url(../images/hero-bg.jpg);
  background-repeat:no-repeat;
  background-size: cover;
  background-position: center top;
  background-attachment: fixed;
- padding: 120px 0 100px;
+ padding: 190px 0;
 } 
 .bannercontent{
 	text-align: center;
@@ -340,7 +340,7 @@
 }
 .servicecontent h2{
 	text-transform: uppercase;
-	font-size: 38px;
+	font-size: 30px;
 	font-weight: 700;
 }
 .servicelist{
@@ -373,7 +373,7 @@
 
 /* ....Call to Action.... */
 .callaction{
-	background-image:linear-gradient(#ffffff36, #000000c4), url(../images/cta-bg.jpg);
+	background-image:linear-gradient(#ffffff14, #070404d9), url(../images/cta-bg.jpg);
 	background-position: center;
 	background-size: cover;
 	background-attachment: fixed;
@@ -429,9 +429,31 @@
 }
 .portfoliohead h2{
 	text-transform: uppercase;
-	font-size: 38px;
+	font-size: 30px;
 	font-weight: 700;
+}
+.portfolio_nav{
+	padding-bottom: 30px;
+	display: flex;
+	justify-content: center;
 }	
+.portfolio_nav .pt-nav-list{
+	color: #444;
+	text-transform: uppercase;
+	font-size: 15px;
+	padding: 8px 15px;
+	background-color: transparent;
+	border-radius: 5px;
+    border: none;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+.portfolio_nav .pt-nav-list:hover{
+ 	background-color:#ffc451;
+}
+.portfolio_nav .pt-nav-list .active{
+ 	background-color:#ffc451;
+}
 .portfolio_items{
     display: flex;
     justify-content: space-between;
@@ -440,16 +462,60 @@
     height: 710px;
 }
 .portfoliolist{
-	background-color:black;
-	height: 110px;
-	margin-bottom: 20px;
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 30px;
 }
-.portfoliolist1{
-	background-color:black;
-	height: 220px;
-	margin-bottom: 20px;
+.portfoliolist img{
+	display: block;
+	width: 100%;
+	height: auto;
+	transition: all 0.5s ease;
 }
-
+.portfoliolist .port-overlay{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(0 0 0 / 60%);
+	display: flex;
+	align-items: flex-end;
+	padding: 20px 20px 30px;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.5s ease;
+}
+.portfoliolist:hover .port-overlay{
+	opacity: 1;
+	visibility: visible;
+}
+.portfoliolist:hover img{
+	transform: scale(1.2);
+}
+.portfolio_txt h4{
+	color: #fff;
+	font-size: 20px;
+	font-weight: 500;
+	padding-bottom: 10px;
+}
+.portfolio_txt h5{
+	color:ccc;
+	font-size:16px;
+	font-weight: 400;
+	font-style: italic;
+	padding-bottom: 15px;
+}
+.portfolio_txt .port-icons a{
+	display: inline-block;
+	text-decoration: none;
+	color: #fff;
+	font-size: 20px;
+	margin-right: 10px;
+}
+.portfolio_txt .port-icons a:hover{
+	color: #ffc451;
+}
 /* ...About Section... */
 .aboutcom{
 	margin-bottom: 30px;
@@ -470,7 +536,6 @@
 }
 .content_sub {
 	position: relative;
-	
 }
 .content_sub i{
 	position:absolute;
@@ -492,7 +557,7 @@
 
 /* ...Profile Section */
 .profile{
-	background-image:linear-gradient(#ffffff36, #000000c4), url(../images/testimonials-bg.jpg);
+	background-image:linear-gradient(#ffffff14, #070404d9), url(../images/testimonials-bg.jpg);
 	background-position: center;
 	background-size: cover;
 	background-attachment: fixed;
