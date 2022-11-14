@@ -70,8 +70,8 @@
 	left: 0;
 	right: 0;
 	top: 0;
-	background-color: rgba(0,0,0,0.5);
-	padding: 10px 0;
+	background-color: transparent;
+	padding: 15px 0;
 }
 .logo > a{
 	font-size: 35px;
@@ -108,11 +108,10 @@
 }
 .dropdown_list, .dropdown_content_sub {
   position: absolute;
-  top:100%;
+  top:0;
   left: 0;
   min-width: 180px;   
   background-color: white; 
-  padding: 10px 0;
   opacity: 0;
   visibility: hidden;
   transform: translateY(50px);
@@ -121,7 +120,7 @@
 .dropdown_content_sub {
   left: 100%;
   top: 0;
-  transform: translateX(-30px);	
+  transform: translateX(0);	
 }
 .dropdown:hover .dropdown_list, 
 .dropdown_content:hover .dropdown_content_sub{
@@ -146,11 +145,10 @@
 	color:black;
 }  
 .btn{
-	background-color:black;
-	color:white;
+	color:#fff;
 	padding:10px 10px;
-	border:1px solid #ffc451;
-	border-radius:10px;
+	border:2px solid #ffc451;
+	border-radius:4px;
 }
 .navbar{
 	text-align: center;
@@ -172,13 +170,12 @@
 
 /* ....Banner Section.... */
 .bannersection{
- background-color:red;
- background-image: url(../images/hero-bg.jpg);
+ background-image: linear-gradient(#ffffff36, #000000c4), url(../images/hero-bg.jpg);
  background-repeat:no-repeat;
  background-size: cover;
  background-position: center top;
  background-attachment: fixed;
- padding: 200px 0 150px;
+ padding: 120px 0 100px;
 } 
 .bannercontent{
 	text-align: center;
@@ -226,7 +223,7 @@
 
 /* ....About Section.... */
 .about{
-	padding-top:60px;
+	padding-top:45px;
 	padding-bottom:30px;
 }
 .about_content h3{
@@ -258,8 +255,7 @@
 
 /* ....clients logo.... */
 .clients{
-  
-	padding: 60px 0;
+   padding: 40px 0 30px;
 }
 .clientimage{
 	height: 100%;
@@ -297,7 +293,7 @@
 
 /* ....Object Section.... */
 .object{
-	padding: 80px 0;
+    padding: 20px 0 70px;
 }
 .object_image img{
 	width: 100%;
@@ -335,7 +331,7 @@
 }
 .servicecontent h4:after{
 	content: "";
-	position: absloute;
+	position: absolute;
 	top: 8px;
 	width: 100px;
 	height: 1px;
@@ -377,7 +373,7 @@
 
 /* ....Call to Action.... */
 .callaction{
-	background-image: url(../images/cta-bg.jpg);
+	background-image:linear-gradient(#ffffff36, #000000c4), url(../images/cta-bg.jpg);
 	background-position: center;
 	background-size: cover;
 	background-attachment: fixed;
@@ -412,12 +408,30 @@
 }
 
 /* ...portfolio... */
-.portfolio{
-
-}
 .portfoliohead{
-
+	padding: 0 15px 40px 0;
 }
+.portfoliohead h4{
+	position: relative;
+	text-transform: uppercase;
+	color: #aaaaaa;
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+.portfoliohead h4:after{
+	content: "";
+	position: absolute;
+	top: 8px;
+	width: 100px;
+	height: 1px;
+	margin-left: 8px;
+	background-color: #ffc451;
+}
+.portfoliohead h2{
+	text-transform: uppercase;
+	font-size: 38px;
+	font-weight: 700;
+}	
 .portfolio_items{
     display: flex;
     justify-content: space-between;
@@ -435,7 +449,69 @@
 	height: 220px;
 	margin-bottom: 20px;
 }
+
+/* ...About Section... */
 .aboutcom{
-	background-color:red;
+	margin-bottom: 30px;
+}
+.about_content_txt{
+    margin-top: 80px;
+    margin-left: 50px;
+}
+.about_content_txt h2{
+	font-size: 32px;	
+}
+.content_txt{
+	padding-top:20px;
+}
+.about_content img{
+	width:100%;
+	height:auto;
+}
+.content_sub {
+	position: relative;
+	
+}
+.content_sub i{
+	position:absolute;
+	top: 0;
+	left: 0;
+	margin-right: 30px;
+	padding: 13px 0 0px 15px;
+	font-size: 35px;
+	color: #ffc451;
+}
+.content_sub h2{
+	padding-left: 40px;
+	font-size:35px;
+}
+.content_sub p{
+	padding-left: 40px;
 }
 
+
+/* ...Profile Section */
+.profile{
+	background-image:linear-gradient(#ffffff36, #000000c4), url(../images/testimonials-bg.jpg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	width: 100%;
+	height: auto;
+	text-align:center;
+    padding: 100px 250px;
+	margin-top: 50px;
+    margin-bottom: 40px;
+	color:white;
+}
+.profile_info {
+	line-height: 40px;
+}
+.profile_info img{
+	height: 100px;
+    border-radius: 50%;
+    display: inline-block;
+}
+.profile_info p{
+	color: white;
+}
