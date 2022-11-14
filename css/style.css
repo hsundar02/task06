@@ -2,10 +2,11 @@
 	width:1320px;
 	padding: 0 15px;
 	margin: 0 auto;
+	font-family: 'Open Sans', sans-serif;
 }
 .row{
 	display: flex;
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
 	margin-left: -15px;
 	margin-right: -15px;
 }
@@ -62,12 +63,14 @@
 	padding: 0 15px;
 }
 
+/* ....Header Section.... */
+
 .topheader{
 	position: fixed;
 	left: 0;
 	right: 0;
 	top: 0;
-	background-color: rgba(0,0,0,0);
+	background-color: rgba(0,0,0,0.5);
 	padding: 10px 0;
 }
 .logo > a{
@@ -97,7 +100,6 @@
 	font-size:15px;
 	font-weight: 700;
 }
-
 .dropdown, .dropdown_content{
 	position: relative;
 }
@@ -105,7 +107,6 @@
 	margin-left: 8px;
 }
 .dropdown_list, .dropdown_content_sub {
-  display: none;
   position: absolute;
   top:100%;
   left: 0;
@@ -118,16 +119,15 @@
   transition: all 0.3s ease;
 }
 .dropdown_content_sub {
-	left: 100%;
-	top: 0;
-transform: translateX(-30px);	
+  left: 100%;
+  top: 0;
+  transform: translateX(-30px);	
 }
 .dropdown:hover .dropdown_list, 
 .dropdown_content:hover .dropdown_content_sub{
   opacity: 1;
   visibility: visible;
-   transform: translateX(0);
-  display: block;
+  transform: translate(0 0); 
 }
 
 .dropdown_list > li > a,
@@ -157,8 +157,7 @@ transform: translateX(-30px);
 }
 .nav-button > a{
 	display: inline-block;
-    background-color: black;
-    color: green;
+    color: white;
     text-decoration: none;
     text-align: center;
     padding: 10px 25px;
@@ -166,9 +165,12 @@ transform: translateX(-30px);
 }
 .nav-button a:hover{
 	background-color:#ffc451;
-	color:white;
+	color:black;
 	text-decoration: none;
 }
+
+
+/* ....Banner Section.... */
 .bannersection{
  background-color:red;
  background-image: url(../images/hero-bg.jpg);
@@ -220,6 +222,9 @@ transform: translateX(-30px);
 .banner-boxs:hover{
 	border-color: #ffc451;
 }
+
+
+/* ....About Section.... */
 .about{
 	padding-top:60px;
 	padding-bottom:30px;
@@ -249,6 +254,9 @@ transform: translateX(-30px);
 	width: 100%;
 	height: auto;
 }
+
+
+/* ....clients logo.... */
 .clients{
   
 	padding: 60px 0;
@@ -285,47 +293,130 @@ transform: translateX(-30px);
 .dots-box:hover{
 	background-color:#ffc451;
 }
- .service{
-	background-color:red;
-	height: 340px;
+
+
+/* ....Object Section.... */
+.object{
+	padding: 80px 0;
 }
-.services{
-	background-color:red;
-	height: 480px;
+.object_image img{
+	width: 100%;
+	height: auto;
+}
+.object_items{
+	position: relative;
+	padding-left: 60px;
+	padding-bottom: 45px;
+}
+.object_items i{
+	position: absolute;
+	left: 0;
+	top: 5px;
+	color: #ffc451;
+	font-size: 40px;
+}
+.object_items h4{
+	font-size: 18px;
+	padding-bottom: 10px;
+}
+
+
+/* ....Services section.... */
+
+.servicecontent{
+	padding: 0 15px 40px 0;
+}
+.servicecontent h4{
+	position: relative;
+	text-transform: uppercase;
+	color: #aaaaaa;
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+.servicecontent h4:after{
+	content: "";
+	position: absloute;
+	top: 8px;
+	width: 100px;
+	height: 1px;
+	margin-left: 8px;
+	background-color: #ffc451;
+}
+.servicecontent h2{
+	text-transform: uppercase;
+	font-size: 38px;
+	font-weight: 700;
 }
 .servicelist{
-	background-color:black;
-	height: 220px;
+	background-color: #fff;
+	text-align: center;
+	padding: 55px 10px;
+	border: solid 1px #eee;
+	margin-bottom: 30px;
+	transition: all 0.5s ease;
+}
+.servicelist:hover{
+	transform: translateY(-15px) scale(1.05);
+	box-shadow: 0 0 10px #eee;
+}
+.servicelist i{
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	background-color: #ffc451;
+	color: #444;
+	font-size: 22px;
+	border-radius: 3px;
+}
+.servicelist h3{
+	padding: 20px 0;
+	font-size: 22px;
+}
+
+
+/* ....Call to Action.... */
+.callaction{
+	background-image: url(../images/cta-bg.jpg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	width: 100%;
+	height: auto;
+	text-align:center;
+	padding: 50px 0;
+	margin-bottom:40px;
+	color:#fff;
+}
+.calltoaction h2{
+	color: #fff;
+    font-size: 28px;
+    font-weight: 700;
 	margin-bottom: 20px;
 }
-.services_name{
-	display:flex;
-	flex-wrap: wrap;
-	justify-content: center;
+.calltoaction p{
+	color: #fff;
+	margin-bottom: 20px;
 }
-.servicehead{
-	background-color:red;
-	    height: 140px;
+.calltoaction > a{
+	display: inline-block;
+	color: #fff;
+	background: transparent;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 25px;
 }
-.servicecontent{
-	background-color:black;
-	height:100px;
+.callbutton:hover{
+	background-color:#ffc451;
+	text-decoration: none;	
 }
-.callaction{
-	background-color:red;
-	height: 190px;
-}
-.calltoaction{
-	background-color:black;
-	height:170px;
-}
+
+/* ...portfolio... */
 .portfolio{
-	background-color:red;
+
 }
 .portfoliohead{
-	background-color:black;
-	height:100px;
-	margin-bottom: 20px;
+
 }
 .portfolio_items{
     display: flex;
@@ -347,3 +438,4 @@ transform: translateX(-30px);
 .aboutcom{
 	background-color:red;
 }
+
