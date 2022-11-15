@@ -582,6 +582,10 @@
 }
 
 /* ...Team Members... */
+.team{
+	margin-bottom:30px;
+}
+
 .teamheading{
 	padding: 0 15px 40px 0;
 }
@@ -611,12 +615,15 @@
 	
 }
 .teampeople{
-	margin-right: 50px;
-	box-shadow: 1px 10px 5px grey;
-	background-color: white;
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
+    height: 100%;
+    box-shadow: 3px 6px 10px #edede666;
+    border: 1px groove #fffbfb;
+    border-radius: 10px;
+}
+.teampeople img{
+	width: 100%;
+	height: auto;
 }
 .text{
-	text-align: center;
+	margin-left: 10px;
 }
