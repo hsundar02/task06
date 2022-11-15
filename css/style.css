@@ -70,7 +70,7 @@
 	left: 0;
 	right: 0;
 	top: 0;
-	background: rgba(0, 0, 0, 0.8);
+	background: transparent;/* rgba(0, 0, 0, 0.8); */
 	padding: 15px 0;
 }
 .logo > a{
@@ -451,7 +451,7 @@
 .portfolio_nav .pt-nav-list:hover{
  	background-color:#ffc451;
 }
-.portfolio_nav .pt-nav-list .active{
+.pt-nav-list .active{
  	background-color:#ffc451;
 }
 .portfolio_items{
@@ -579,4 +579,45 @@
 }
 .profile_info p{
 	color: white;
+}
+
+/* ...Team Members... */
+.teamheading{
+	padding: 0 15px 40px 0;
+}
+.teamheading h4{
+	position: relative;
+	text-transform: uppercase;
+	color: #aaaaaa;
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+.teamheading h4:after{
+	content: "";
+	position: absolute;
+	top: 8px;
+	width: 100px;
+	height: 1px;
+	margin-left: 8px;
+	background-color: #ffc451;
+}
+.teamheading h2{
+	text-transform: uppercase;
+	font-size: 30px;
+	font-weight: 700;
+}
+.team_member{
+	display: flex;
+	
+}
+.Teampeople{
+	margin-right: 50px;
+    border: 0.5px solid black;
+	box-shadow: 1px 12px 8px grey;
+	background-color: white;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.text{
+	text-align: center;
 }
