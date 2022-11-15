@@ -62,6 +62,9 @@
 	width: 100%;
 	padding: 0 15px;
 }
+a {
+	color:black;
+}
 
 /* ....Header Section.... */
 
@@ -92,6 +95,7 @@
 	color: white;
 	font-size:15px;
 	font-weight: 700;
+	transition: all 0.3s ease;
 }
 .navlink > a:hover{
 	display: block;
@@ -108,7 +112,7 @@
 }
 .dropdown_list, .dropdown_content_sub {
   position: absolute;
-  top:0;
+  top: 0;
   left: 0;
   min-width: 180px;   
   background-color: white; 
@@ -120,13 +124,14 @@
 .dropdown_content_sub {
   left: 100%;
   top: 0;
-  transform: translateX(0);	
+  transform: translateX(-30px);	
 }
 .dropdown:hover .dropdown_list, 
 .dropdown_content:hover .dropdown_content_sub{
   opacity: 1;
   visibility: visible;
-  transform: translate(0 0); 
+  transform:translateY(0px);
+ 
 }
 
 .dropdown_list > li > a,
@@ -225,6 +230,7 @@
 .about{
 	padding-top:45px;
 	padding-bottom:30px;
+	line-height: 25px;
 }
 .about_content h3{
 	font-size: 25px;
@@ -368,6 +374,13 @@
 .servicelist h3{
 	padding: 20px 0;
 	font-size: 22px;
+	color: black;
+}
+.servicelist a{
+	text-decoration: none;
+}
+.servicelist h3:hover{
+	color: #ffc451;
 }
 
 
@@ -401,6 +414,9 @@
     text-decoration: none;
     text-align: center;
     padding: 10px 25px;
+}
+.callbutton{
+	border-color:white;
 }
 .callbutton:hover{
 	background-color:#ffc451;
@@ -442,17 +458,16 @@
 	text-transform: uppercase;
 	font-size: 15px;
 	padding: 8px 15px;
-	background-color: transparent;
 	border-radius: 5px;
     border: none;
 	cursor: pointer;
 	transition: all 0.3s ease;
 }
-.portfolio_nav .pt-nav-list:hover{
+ .pt-nav-list:hover{
  	background-color:#ffc451;
 }
-.pt-nav-list .active{
- 	background-color:#ffc451;
+ .active {
+    background-color:#ffc451;
 }
 .portfolio_items{
     display: flex;
@@ -494,13 +509,13 @@
 	transform: scale(1.2);
 }
 .portfolio_txt h4{
-	color: #fff;
+	color: white;
 	font-size: 20px;
 	font-weight: 500;
 	padding-bottom: 10px;
 }
 .portfolio_txt h5{
-	color:ccc;
+	color:grey;
 	font-size:16px;
 	font-weight: 400;
 	font-style: italic;
@@ -509,11 +524,14 @@
 .portfolio_txt .port-icons a{
 	display: inline-block;
 	text-decoration: none;
-	color: #fff;
+	color: white;
 	font-size: 20px;
 	margin-right: 10px;
 }
-.portfolio_txt .port-icons a:hover{
+.port-icons{
+	color: white;
+}
+.portfolio_txt .port-icons:hover{
 	color: #ffc451;
 }
 /* ...About Section... */
@@ -522,10 +540,11 @@
 }
 .about_content_txt{
     margin-top: 80px;
-    margin-left: 50px;
+    margin-left: 0px;
 }
 .about_content_txt h2{
-	font-size: 32px;	
+	font-size: 32px;
+	padding-bottom: 15px;
 }
 .content_txt{
 	padding-top:20px;
@@ -575,11 +594,16 @@
 .profile_info img{
 	height: 100px;
     border-radius: 50%;
-    display: inline-block;
+    display: inline-block;	
+	border: 5px solid #e8dede80;
 }
 .profile_info p{
 	color: white;
 }
+.profile_info i{
+	color: grey;
+} 
+
 
 /* ...Team Members... */
 .team{
@@ -610,20 +634,55 @@
 	font-size: 30px;
 	font-weight: 700;
 }
-.team_member{
-	display: flex;
-	
+.text{
+	padding: 20px 15px;
+} 
+.text h4{
+	padding-bottom: 5px;
+}
+.team_overlay{
+	position: relative;	
+}
+.team_overlay img{
+	width: 100%;
+	display: black;	
+}
+.hover_images{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	padding: 30px 10px;
+	text-align: center;
+	transform: translateY(-20px);
+	transition: all 0.5s ease;
+	opacity: 0;
+	  
+}
+.hover_images a{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	color: #444444;
+	background-color: #ccc;
+	border-radius: 5px;
+	font-size: 20px;
+	margin: 0 5px;
+}
+.hover_images a:hover{
+	color: black;
+	background-color: #ffc451;
 }
 .teampeople{
-    height: 100%;
-    box-shadow: 3px 6px 10px #edede666;
-    border: 1px groove #fffbfb;
-    border-radius: 10px;
+	box-shadow: 5px 10px 10px grey;
+	background-color: white;
+	border-radius: 5px;
 }
-.teampeople img{
-	width: 100%;
-	height: auto;
+.teampeople:hover .team_overlay .hover_images{
+	opacity: 1;
+	transform: translateY(0);
 }
-.text{
-	margin-left: 10px;
-}
+
+
