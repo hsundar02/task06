@@ -1,3 +1,4 @@
+
 .container{
 	width:1320px;
 	padding: 0 15px;
@@ -110,6 +111,9 @@ a {
 .dropdown > a > i{
 	margin-left: 8px;
 }
+.dropdown_content > a > i{
+	margin-left: 30px;
+}
 .dropdown_list, .dropdown_content_sub {
   position: absolute;
   top: 100%;
@@ -139,6 +143,7 @@ a {
 	text-decoration:none;
 	color: black;
 	font-size:15px;
+	font-weight: 300;
 	text-align: left;
 	padding: 8px 20px;
 	transition: all 0.3s ease;
@@ -378,7 +383,7 @@ a {
 .servicelist a{
 	text-decoration: none;
 }
-.servicelist h3:hover{
+.servicelist >h3 > a:hover{
 	color: #ffc451;
 }
 
@@ -421,7 +426,7 @@ a {
 	background-color:#ffc451;
 	color: black;
 	text-decoration: none;	
-	border: none;
+	border: 1px solid #ffc451;
 }
 
 /* ...portfolio... */
@@ -493,7 +498,7 @@ a {
 	padding-bottom: 10px;
 }
 .portfolio_txt h5{
-	color:grey;
+	color:#ccc;
 	font-size:16px;
 	font-weight: 400;
 	font-style: italic;
@@ -508,6 +513,9 @@ a {
 }
 .port-icons{
 	color: white;
+}
+.port-icons i{
+	padding-right: 10px;
 }
 .portfolio_txt .port-icons:hover{
 	color: #ffc451;
@@ -547,16 +555,20 @@ button{
 	top: 0;
 	left: 0;
 	margin-right: 30px;
-	padding: 13px 0 0px 15px;
+	padding: 6px 0 0px 15px;
 	font-size: 35px;
 	color: #ffc451;
 }
+.content_sub h2 ,.content_sub p{
+	margin-left: 10px;
+} 
 .content_sub h2{
 	padding-left: 40px;
 	font-size:35px;
 }
 .content_sub p{
 	padding-left: 40px;
+	padding-bottom: 20px;
 }
 
 
@@ -593,8 +605,9 @@ button{
 
 /* ...Team Members... */
 .team{
-	margin-bottom:30px;
+	padding: 50px 0 80px;
 }
+	
 .text{
 	padding: 20px 15px;
 } 
@@ -623,10 +636,10 @@ button{
 }
 .hover_images a{
 	display: inline-block;
-	width: 50px;
-	height: 50px;
+	width: 40px;
+	height: 40px;
 	text-align: center;
-	line-height: 50px;
+	line-height: 40px;
 	color: #444444;
 	background-color: #ccc;
 	border-radius: 5px;
@@ -638,10 +651,12 @@ button{
 	background-color: #ffc451;
 }
 .teampeople{
-	box-shadow: 5px 10px 10px grey;
-	background-color: white;
+	box-shadow:2px 10px 10px rgb(0 0 0 / 40%);
 	border-radius: 5px;
 }
+.text{
+    padding: 18px 0 18px 11px;
+}	
 .teampeople:hover .team_overlay .hover_images{
 	opacity: 1;
 	transform: translateY(0);
@@ -670,17 +685,23 @@ button{
     font-weight: 500;
     margin-bottom: 5px;
 }
-input {
+
+.form_input {
     width: 100%;
     height: 40px;
     margin-bottom: 22px;
 	border-radius: 5px;
 }
-textarea{
+.form_input:focus{
+	outline: 0;
+	border: 1px solid #ffc451;
+}
+textarea.form_input {
+	 height: 140px;
 	border-radius: 5px;	
 	margin-bottom: 22px;
 }
-value {
+.form_input value {
 	font-size: 10px;
 	color: grey;
 	margin-left: 10px;
@@ -694,16 +715,13 @@ value {
    background-color: #ffc451;
    border: 1px solid white;
 }
-.contact_map{
-	margin-bottom: 30px;
-}
-.contact_map iframe{
-	width: 100%;
-}
+ .contact_map{
+	margin-bottom: 60px;
+} 
 
 /* ...Footer Section... */
 .footer-section{
-	background-color: black;
+	background-color: #151515;
 	color: white;
 	line-height: 40px;	
 	padding: 45px 0;
@@ -713,9 +731,6 @@ value {
 }
 .footer-section span{
 	color: #ffc451;
-}
-.Useful-links{
-	margin: 0 -55px;
 }
 .Useful-links ul>li>a{
 	color: white;
@@ -749,25 +764,33 @@ value {
 	background-color:#ffc451;
 	color: black;
 } 
-.Subscribe input{
+.Subscribe {
 	position: relative;
-	width: 60%;
-    height: 40px;
-	margin-top: 10px;
-    margin-bottom: 22px;
+	background-color: white;
 	border-radius: 5px;
+	padding: 10px 95px 5px 10px;
+	overflow: hidden;
+	margin-top: 30px;
 }
-.Subscribe span{
-	margin-top: 10px;
+.Subscribe input{
+	width: 100%;
+	border: 0;
+}
+.Subscribe .subscribe_btn {
     position: absolute;
+	right: 0;
+	top: 0;
     background-color: #ffc451;
+	height: 100%;
     color: black;
-    padding: 0 8px;
-    border-radius: 5px;
+	padding: 5px 14px;
+    font-size: 15px;
+	border: 0;
+    border-radius: 0;
 }
 
 .copy_rights{
-    background-color: #444444;
+    background-color: black;
     text-align: center;
     line-height: 40px;
     color: white;
