@@ -821,6 +821,8 @@ textarea.form_input {
     border-radius: 5px;
 	bottom: 0;
     right: 0;
+	margin: 20px;
+}
 }
 .homebutton > a > i:hover{
 	background-color:#151515;
