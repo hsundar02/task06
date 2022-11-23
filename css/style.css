@@ -199,8 +199,6 @@ a {
  background-size: cover;
  background-position: center top;
  background-attachment: fixed;
- width: 100%;
- height: auto;
  padding: 190px 0;
 } 
 .bannercontent{
@@ -412,8 +410,6 @@ a {
 	background-position: center;
 	background-size: cover;
 	background-attachment: fixed;
-	width: 100%;
-	height: auto;
 	text-align:center;
 	padding: 50px 0;
 	margin-bottom:40px;
