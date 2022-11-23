@@ -1,6 +1,6 @@
 
 .container{
-	width:100%;
+	width: 100%;
 	padding: 0 15px;
 	margin: 0 auto;
 	font-family: 'Open Sans', sans-serif;
@@ -15,58 +15,73 @@
 	width: 100%;
 	padding: 0 15px;
 }
-.col-lg-1{
+.col-1{
 	width: 8.33%;
 	padding: 0 15px;
 }
-.col-lg-2{
+.col-2{
 	width: 16.66%;
 	padding: 0 15px;
 }
-.col-lg-3{
+.col-3{
 	width: 25%;
 	padding: 0 15px;
 }
-.col-lg-4{
+.col-4{
 	width: 33.33%;
 	padding: 0 15px;
 }
-.col-lg-5{
+.col-5{
 	width:41.66%;
 	padding: 0 15px;
 }
-.col-lg-6{
+.col-6{
 	width: 50%;
 	padding: 0 15px;
 }
-.col-lg-7{
+.col-7{
 	width: 58.33%;
 	padding: 0 15px;
 }
-.col-lg-8{
+.col-8{
 	width: 66.66%;
 	padding: 0 15px;
 }
-.col-lg-9{
+.col-9{
 	width: 75%;
 	padding: 0 15px;
 }
-.col-lg-10{
+.col-10{
 	width: 83.33%;
 	padding: 0 15px;
 }
-.col-lg-11{
+.col-11{
 	width: 91.66%;
 	padding: 0 15px;
 }
-.col-lg-12{
+.col-12{
 	width: 100%;
 	padding: 0 15px;
+} 
+.d-block{
+	display: block !important;
 }
+.d-none{
+	display: none !important;
+}
+
 a {
 	color:black;
 }
-
+.mobile-btn{
+	position: absolute;
+	top: 8px;
+	right: 10px;
+	background-color: black;
+	color: white;
+	font-size: 30px;
+	border: 0;
+}
 /* ....Header Section.... */
 
 .topheader{
@@ -74,7 +89,7 @@ a {
 	left: 0;
 	right: 0;
 	top: 0;
-	background: transparent;/* rgba(0, 0, 0, 0.8); */
+	background: transparent;
 	padding: 15px 0;
 }
 .logo > a{
@@ -184,6 +199,8 @@ a {
  background-size: cover;
  background-position: center top;
  background-attachment: fixed;
+ width: 100%;
+ height: auto;
  padding: 190px 0;
 } 
 .bannercontent{
@@ -214,6 +231,7 @@ a {
 	color: white;
 	height: 100%;
 	transition: all 0.3s ease;
+	margin-bottom: 25px;
 }
 .banner-boxs i{
 	color:#ffc451;
@@ -719,6 +737,8 @@ textarea.form_input {
 /* ...Footer Section... */
 .footer-section{
 	background-color: #151515;
+	width: 100%;
+	height: auto;
 	color: white;
 	line-height: 40px;	
 	padding: 45px 0;
