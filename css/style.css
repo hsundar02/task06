@@ -182,7 +182,7 @@ a {
     color: white;
     text-decoration: none;
     text-align: center;
-    padding: 10px 25px;
+    padding: 10px 9px;
 	margin-left: 119px;
 }
 .nav-button a:hover{
@@ -277,6 +277,7 @@ a {
 	width: 100%;
 	height: auto;
 }
+
 
 
 /* ....clients logo.... */
@@ -589,10 +590,7 @@ button{
 	background-position: center;
 	background-size: cover;
 	background-attachment: fixed;
-	width: 100%;
-	height: auto;
 	text-align:center;
-    padding: 100px 250px;
 	margin-top: 50px;
     margin-bottom: 40px;
 	color:white;
